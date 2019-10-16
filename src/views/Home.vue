@@ -109,11 +109,11 @@ export default {
     },
     updateActor: function(actor) {
       var params = {
-        first_name: actor.FirstName,
-        last_name: actor.LastName,
-        Gender: actor.Gender,
-        knownfor: actor.KnownFor,
-        age: actor.Age,
+        first_name: actor.first_Name,
+        last_name: actor.first_name,
+        Gender: actor.gender,
+        knownfor: actor.knownFor,
+        age: actor.age,
         MoviePlot: actor.MoviePlot
       };
       axios.patch("/api/actors/" + actor.id + params).then(response => {
